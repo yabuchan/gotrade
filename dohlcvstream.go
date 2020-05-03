@@ -1,6 +1,6 @@
 /* Package GoTrade implements
 
-*/
+ */
 package gotrade
 
 import (
@@ -57,6 +57,10 @@ func NewInterDayDOHLCVStream(streamBarType interDayBarType) *InterDayDOHLCVStrea
 		maxValue: math.SmallestNonzeroFloat64},
 		streamBarType: streamBarType}
 	return &s
+}
+
+func NewMuniteDOHLCVStream() *IntraDayDOHLCVStream {
+	return NewIntraDayDOHLCVStream(MinuteBar)
 }
 
 func NewDailyDOHLCVStream() *InterDayDOHLCVStream {
@@ -127,10 +131,10 @@ func (p *DOHLCVStream) RemoveTickSubscription(subscriber DOHLCVTickReceiver) {
 
 type IntraDayDOHLCVStream struct {
 	*DOHLCVStream
-	intraDayBarInterval int
+	intraDayBarInterval intraDayBarType
 }
 
-func NewIntraDayDOHLCVStream(barIntervalInMins int) *IntraDayDOHLCVStream {
+func NewIntraDayDOHLCVStream(barIntervalInMins intraDayBarType) *IntraDayDOHLCVStream {
 	s := IntraDayDOHLCVStream{DOHLCVStream: &DOHLCVStream{streamBarIndex: 0,
 		minValue: math.MaxFloat64,
 		maxValue: math.SmallestNonzeroFloat64},
