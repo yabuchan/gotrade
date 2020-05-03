@@ -2,7 +2,8 @@ package indicators
 
 import (
 	"errors"
-	"github.com/thetruetrade/gotrade"
+
+	"github.com/yabuchan/gotrade"
 )
 
 // A Minus Directional Indicator (MinusDi), no storage, for use in other indicators

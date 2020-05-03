@@ -2,8 +2,9 @@ package indicators
 
 import (
 	"errors"
-	"github.com/thetruetrade/gotrade"
 	"math"
+
+	"github.com/yabuchan/gotrade"
 )
 
 // A Stop and Reverse Indicator (Sar), no storage, for use in other indicators

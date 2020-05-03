@@ -2,7 +2,8 @@ package indicators
 
 import (
 	"errors"
-	"github.com/thetruetrade/gotrade"
+
+	"github.com/yabuchan/gotrade"
 )
 
 // An Average Directional Index (Adx), no storage, for use in other indicators

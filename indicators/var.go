@@ -3,7 +3,8 @@ package indicators
 import (
 	"container/list"
 	"errors"
-	"github.com/thetruetrade/gotrade"
+
+	"github.com/yabuchan/gotrade"
 )
 
 // A Variance Indicator (Var), no storage, for use in other indicators

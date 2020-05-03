@@ -4,8 +4,9 @@ package indicators
 
 import (
 	"errors"
-	"github.com/thetruetrade/gotrade"
 	"math"
+
+	"github.com/yabuchan/gotrade"
 )
 
 // An Directional Movement Index Indicator (Dx), no storage, for use in other indicators

@@ -2,9 +2,10 @@ package feeds
 
 import (
 	"encoding/csv"
-	"github.com/thetruetrade/gotrade"
 	"io"
 	"os"
+
+	"github.com/yabuchan/gotrade"
 )
 
 type CSVFileFeed struct {
