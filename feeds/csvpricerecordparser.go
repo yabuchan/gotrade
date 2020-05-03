@@ -1,9 +1,10 @@
 package feeds
 
 import (
-	"github.com/thetruetrade/gotrade"
 	"strconv"
 	"time"
+
+	"github.com/yabuchan/gotrade"
 )
 
 type CSVDOHLCVRecordParser struct {

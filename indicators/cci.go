@@ -3,8 +3,9 @@ package indicators
 import (
 	"container/list"
 	"errors"
-	"github.com/thetruetrade/gotrade"
 	"math"
+
+	"github.com/yabuchan/gotrade"
 )
 
 // A Commodity Channel Index Indicator (Cci), no storage, for use in other indicators
@@ -42,10 +43,10 @@ func NewCciWithoutStorage(timePeriod int, valueAvailableAction ValueAvailableAct
 	lookback := timePeriod - 1
 	ind := CciWithoutStorage{
 		baseIndicatorWithFloatBounds: newBaseIndicatorWithFloatBounds(lookback, valueAvailableAction),
-		factor:              0.015,
-		periodCounter:       (timePeriod * -1),
-		typicalPriceHistory: list.New(),
-		timePeriod:          timePeriod,
+		factor:                       0.015,
+		periodCounter:                (timePeriod * -1),
+		typicalPriceHistory:          list.New(),
+		timePeriod:                   timePeriod,
 	}
 
 	ind.typicalPriceAvg, err = NewSmaWithoutStorage(timePeriod, func(dataItem float64, streamBarIndex int) {

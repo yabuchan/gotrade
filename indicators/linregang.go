@@ -1,8 +1,9 @@
 package indicators
 
 import (
-	"github.com/thetruetrade/gotrade"
 	"math"
+
+	"github.com/yabuchan/gotrade"
 )
 
 // A Linear Regression Angle Indicator (LinRegAng)

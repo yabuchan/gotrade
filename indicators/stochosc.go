@@ -2,7 +2,8 @@ package indicators
 
 import (
 	"errors"
-	"github.com/thetruetrade/gotrade"
+
+	"github.com/yabuchan/gotrade"
 )
 
 // A Stochastic Oscillator Indicator (StochOsc), no storage, for use in other indicators

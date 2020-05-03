@@ -3,8 +3,8 @@ package indicators_test
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/thetruetrade/gotrade"
-	"github.com/thetruetrade/gotrade/indicators"
+	"github.com/yabuchan/gotrade"
+	"github.com/yabuchan/gotrade/indicators"
 )
 
 var _ = Describe("when calculating a linear regression angle (linearregangle) with DOHLCV source data", func() {
