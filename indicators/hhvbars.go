@@ -3,8 +3,9 @@ package indicators
 import (
 	"container/list"
 	"errors"
-	"github.com/thetruetrade/gotrade"
 	"math"
+
+	"github.com/yabuchan/gotrade"
 )
 
 // A Highest High Value Bars Indicator (HhvBars), no storage, for use in other indicators

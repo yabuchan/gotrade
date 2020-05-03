@@ -3,8 +3,8 @@ package indicators_test
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/thetruetrade/gotrade"
-	"github.com/thetruetrade/gotrade/indicators"
+	"github.com/yabuchan/gotrade"
+	"github.com/yabuchan/gotrade/indicators"
 )
 
 var _ = Describe("when creating an varwithoutstorage", func() {

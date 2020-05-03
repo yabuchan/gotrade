@@ -1,10 +1,11 @@
 package indicators_test
 
 import (
+	"math"
+
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/thetruetrade/gotrade/indicators"
-	"math"
+	"github.com/yabuchan/gotrade/indicators"
 )
 
 var _ = Describe("when creating an sarwithoutstorage", func() {

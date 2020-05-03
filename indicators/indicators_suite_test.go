@@ -3,11 +3,6 @@ package indicators_test
 import (
 	"encoding/csv"
 	"fmt"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	"github.com/thetruetrade/gotrade"
-	"github.com/thetruetrade/gotrade/feeds"
-	"github.com/thetruetrade/gotrade/indicators"
 	"io"
 	"math"
 	"os"
@@ -15,6 +10,12 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
+	"github.com/yabuchan/gotrade"
+	"github.com/yabuchan/gotrade/feeds"
+	"github.com/yabuchan/gotrade/indicators"
 )
 
 var (
